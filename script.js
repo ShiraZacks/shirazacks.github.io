@@ -1,26 +1,18 @@
-/**
- * The function of changing the color of letters in a line on hover.
- * @param {string} stringClass The text element to be changed
- * @param {array} colors An array of colors to add to an element
- */
-function colorHoverText(stringClass, colors) {
-    // Get the line you want
-    const text = document.querySelector(stringClass)
 
-    // Split the string into an array and add to the DOM
-    const arrDom = []
-
-    let colorIndex = 0
-
-    text.innerText.split('').forEach(function (e) {
+function colorChange(colors) {
+    //element has class "test"
+    let text = document.querySelector('.test');
+    //need too split the text into individual spans
+    const textSplit = text.innerText.split('');
+    const arrDom = [];
+    let colorIndex = 0;
+    textSplit.forEach(function (e) {
         arrDom.push(`<span ${e === ' ' ? '' : ` data-color=${colors[colorIndex]} `}>${e}</span>`)
+        /*Counter for the number of colors*/
+        colorIndex >= colors.length - 1 ? colorIndex = 0 : colorIndex++;
+    });
+    text.innerHTML = arrDom.join('');
 
-        // Counter for the number of colors
-        colorIndex >= colors.length - 1 ? colorIndex = 0 : colorIndex++
-    })
-    text.innerHTML = arrDom.join('')
-
-    // Find all span
     const letters = text.childNodes
 
     // Hover
@@ -65,7 +57,7 @@ function colorHoverText(stringClass, colors) {
         })
     })
 
-    // Un hover
+   /* // Un hover
     letters.forEach(function (e) {
         e.addEventListener('mouseout', function () {
             // Remove the color of the letter
@@ -95,9 +87,10 @@ function checkingElementAddingStyles(element, boolean = true) {
         if (element) element.style.color = '';
     }
 
-}
+}};
 
 ///////////////////////////
 // Init function
 //////////////////////////
-colorHoverText('test', ['#E61D6E', '#B6ABCF', '#1C4C87', '#0DB4AB'])
+colorChange(['#E61D6E', '#B6ABCF', '#1C4C87', '#0DB4AB'])
+
