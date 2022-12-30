@@ -1,3 +1,21 @@
-html{
+html, body {
+    margin: 0px;
+}
+
+.top_div{
     background-color: black;
+    height: 100vh;
+}
+.blue{
+    color: #00ffff;
+}
+h4{
+    font-variant: small-caps;
+}
+
+.center{
+    text-align: center;
+}
+.logo_pic{
+    max-width: 20%;
 }
