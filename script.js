@@ -57,37 +57,38 @@ function colorChange(colors) {
         })
     })
 
-   /* // Un hover
+    /* // Un hover
     letters.forEach(function (e) {
         e.addEventListener('mouseout', function () {
-            // Remove the color of the letter
+             // Remove the color of the letter
             checkingElementAddingStyles(this.previousElementSibling, false)
             this.style.color = ''
             checkingElementAddingStyles(this.nextElementSibling, false)
         })
     })
 
-    // When leaving the parent, remove the flag
+     // When leaving the parent, remove the flag
     text.addEventListener('mouseleave', function () {
         this.removeAttribute('data-flag')
     })
 }
 
 /**
- * Checking for the existence of an element
- * @param element Takes an element to check
- * @param {boolean} [boolean=true] Takes a true/false. If it is no longer equal to 1, then the attribute will be removed.
- */
-function checkingElementAddingStyles(element, boolean = true) {
-    if (boolean) {
-        // Change the color of the letter if there is an element
-        if (element) element.style.color = element.getAttribute('data-color')
-    } else {
-        // Remove the color of the letter if there is an element
-        if (element) element.style.color = '';
-    }
+  * Checking for the existence of an element
+  * @param element Takes an element to check
+  * @param {boolean} [boolean=true] Takes a true/false. If it is no longer equal to 1, then the attribute will be removed.
+  */
+    function checkingElementAddingStyles(element, boolean = true) {
+        if (boolean) {
+            // Change the color of the letter if there is an element
+            if (element) element.style.color = element.getAttribute('data-color')
+        } else {
+            // Remove the color of the letter if there is an element
+            if (element) element.style.color = '';
+        }
 
-}};
+    }
+};
 
 ///////////////////////////
 // Init function
