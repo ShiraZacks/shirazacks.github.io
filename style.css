@@ -6,6 +6,21 @@ body {
 .top_div {
     background-color: black;
     height: 100vh;
+    position: relative;
+}
+
+.top_div::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        bottom: 0;
+        transform-origin: left bottom;
+        transform: skewY(4deg);
+        border-bottom: 10px solid #00ffff;
+
 }
 
 .blue {
@@ -59,9 +74,16 @@ h4 {
 
 @media screen and (max-width: 900px) {
     .coolButton {
-        float: none;
-        display: block;
-        width: 100%;
+        float: left;
+        display:block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
+}
+
+.column_icon{
+    height: 10vh;
+    
 }
