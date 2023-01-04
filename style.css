@@ -154,16 +154,19 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* this^ adds the "card" effect */
     padding: 16px;
-    height: 250px;
+    padding-top: 40px;
+    min-height: 250px;
     text-align: center;
     background-color: #a0ffff;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
     .column {
         display: block;
         width: 80%;
         margin-left: auto;
+        padding-left: 30px;
+        padding-right: 30px;
         margin-right: auto;
         text-align: center;
 
