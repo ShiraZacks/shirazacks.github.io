@@ -99,10 +99,12 @@ a {
 
 .underline {
     position: relative;
+    text-shadow: 3px 3px white;
+
 }
 
 .underline::before {
-    z-index: 0;
+    z-index: 1;
     content: '';
     position: absolute;
     bottom: 0;
