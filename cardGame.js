@@ -1,4 +1,3 @@
-//Card game template
 class card {
     construtor() {
         this.image = "image";
