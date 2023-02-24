@@ -6,7 +6,6 @@ body {
 .top_div {
     background-color: black;
     height: 100vh;
-    /* border-bottom: 10px solid #00ffff; */
     position: relative;
     margin-bottom: 20vh;
 }
@@ -219,4 +218,28 @@ hr {
 
 .project:hover img {
     transform: scale(1.1);
+}
+
+.contact_menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.contact_button{
+    width: 33%;
+    display: inline-block;
+}
+
+#hidden{
+    text-shadow: none !important;
+}
+
+.email:hover #hidden {
+    transition-delay: .4s;
+    display: none;
+}
+
+.email:hover:before {
+    content: "shiramzacks@gmail.com";
 }
