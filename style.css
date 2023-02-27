@@ -174,7 +174,7 @@ hr {
 
 .project_link{
     color: #00ffff;
-    
+    text-shadow: none !important; /* to get rid of .underline white shadow */
 }
 
 .project_link:visited{
