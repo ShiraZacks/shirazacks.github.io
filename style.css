@@ -90,7 +90,9 @@ span {
     text-shadow: 3px 3px white;
 }
 
-
+.big{
+    font-size:2.5em;
+}
 a {
     text-decoration: none;
     color: black;
@@ -136,7 +138,10 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+hr.blueline{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00ffff, rgba(0, 0, 0, 0));
 
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -258,6 +263,12 @@ hr {
     display: inline-block;
 }
 
+.social_button{
+    display: inline-block;
+    width: 15%;
+    
+}
+
 #hidden{
     text-shadow: none !important;
 }
@@ -269,4 +280,8 @@ hr {
 
 .email:hover:before {
     content: "shiramzacks@gmail.com";
+}
+
+.contact_section{
+    height: 60vh;
 }
