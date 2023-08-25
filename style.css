@@ -20,7 +20,6 @@ body {
     bottom: 0;
     transform-origin: left bottom;
     transform: skewY(4deg);
-
 }
 
 .blue {
