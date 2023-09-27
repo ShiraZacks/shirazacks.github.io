@@ -150,7 +150,7 @@ hr.blueline{
 }
 
 
-.column {
+.column,.column2{
     width: 40%;
     display: inline-table;
     margin: 20px;
@@ -162,9 +162,27 @@ hr.blueline{
     text-align: center;
     background-color: #a0ffff;
 }
+.column2{
+    background:none !important;
+}
+
+.contact_menu {
+    width: 100%;
+    text-align: center;
+}
+.contact_menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact_button{
+    width: 40%;
+    display: inline-table;
+}
 
 @media screen and (max-width: 900px) {
-    .column {
+    .column,.column2,.contact_button{
         display: block;
         width: 80%;
         margin-left: auto;
@@ -172,7 +190,6 @@ hr.blueline{
         padding-right: 30px;
         margin-right: auto;
         text-align: center;
-
     }
 }
 
@@ -251,22 +268,7 @@ hr.blueline{
     transform: scale(1.1);
 }
 
-.contact_menu {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
 
-.contact_button{
-    width: 33%;
-    display: inline-block;
-}
-
-.social_button{
-    display: inline-block;
-    width: 15%;
-    
-}
 
 #hidden{
     text-shadow: none !important;
@@ -283,4 +285,12 @@ hr.blueline{
 
 .contact_section{
     height: 60vh;
+}
+
+.wrapShowcase{
+    columns: 2 auto;
+}
+
+.showcase{
+    height: 500px;
 }
